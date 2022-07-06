@@ -1,0 +1,61 @@
+
+O que é o pensamento computacional?
+R: De maneira clara, pensamento computacional é a habilidade de formular e resolucionar problemas através de algoritmos ou passos computacionais, de maneira que a solução encontrada seja resolvível tanto para o homem quanto para a maquina
+
+O pensamento computacional possui 4 pilares
+Decomposição: capacidade de dividir problemas complexos em pequenos problemas que sejam mais fáceis e tranquilos de resolver
+Reconhecimento de Padrões: capacidade de reconhecer padrões, similaridades, padrões comportamentais etc...
+Abstração: capacidade de saber o que é mais importante e o que podemos descartar
+Design de algoritmos: uso da lógica para criar soluções
+
+Raciocínio Lógico: Pensamento estruturado que permite encontrar a resolução de um problema
+Possui 3 etapas: Indução, dedução e abdução
+Indução: Através de um fenômeno observado cria-se uma teoria
+Dedução: através de uma teria, se deduz algo.
+Abdução: Através da observação de um fenômeno deduzimos algo
+
+Qual a função do computador?
+Processar as informações que damos a ele
+Temos 2 tipos de informações
+Dados e instruções
+Dados: Dados puros, objetos de manipulação
+Instruções: São instruções para o computador, normativas e diretrizes do computador.
+DADOS:
+Numéricos:  Ex: 1, 2, 3, 15, 80, 5,40, 8,25 etc...
+Caracteres: Ex: G, #, %, @, H, J, F etc.
+Lógicos: Ex: Só entra 2 resultados, verdadeiro ou falso
+
+Variável
+Objeto ou espaço na memória RAM que é capaz de armazenar dados
+
+Funções
+Bloco de instruções com programação especifica
+
+Como surgiu a tecnologia
+
+Guerra Mundial (1939 – 1945)
+1940
+Alan Turn e mais 9 matemáticos descriptografaram códigos nazistas
+1950
+Criação do COBOL
+1990
+JavaScript e Java
+
+Como o meu computador entende o meu programa
+
+O código fonte é traduzido ou interpretado
+TRADUZIDO
+Dada uma linguagem de alto nível (C#, Java Etc....) O computador vai traduzir o código fonte para uma linguagem de baixo nível, linguagem de máquina, o que chamamos de programa objeto
+INTERPLETAÇÃO
+O código fonte é executado diretamente
+
+Paradigmas
+Estruturado
+•	Todas as execuções são executadas em sequência
+•	Problemas simples
+•	Aprender programação
+Supracitada
+Possui:
+•	Sequencia
+•	Decisão
+•	Iteração

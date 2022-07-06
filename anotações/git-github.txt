@@ -1,0 +1,96 @@
+RESUMO GIT E GIT HUB
+
+O que é o GIT: Foi criado em 2005 por Linus Torvalos, e é um sistema de versionamento de código distribuído
+
+GUI x CLI
+O GIT é um CLI, porque ele não possui interface gráfica, nós nos comunicamos com ele através de linhas de comando
+COMANDOS 
+Listar: para listar usamos o ls
+Criar pastas: usamos a tag mkdir nome da pasta
+Navegar entre as pastas: usamos o cd 
+Mostrar algo: usamos o echo
+GUARDAR UM ECHO DENTRO DE UM ARQUIVO TXT
+Echo ‘Gustavo’ > texto.txt 
+
+SHA1: algoritmo de encriptação
+Trazendo o sha1 de um arquivo text
+Para isso o arquivo tem que estar na mesma pasta que está acessada no GIT
+Ex. ª: o arquivo texto.txt está dentro da pasta workspace, deve-se acessar a pasta primeiro no GIT, através da tag cd, aí utilizamos está tag, e ele irá trazer o sha1 do arquivo
+Openssl sha1 texto.txt
+
+
+OBJETOS
+Temos 3
+Blobs: é um objeto usado para guardar o conteúdo de cada arquivo em um repositório 
+Nele guarda
+Tipo do arquivo
+Tamanho do arquivo
+Barra contaria ao 0
+E o conteúdo
+Tree: (arvores) armazenam blobs e apontam para blobs diferentes e outras arvores
+Nele guarda
+Tipo do arquivo
+Tamanho do arquivo
+Barra contaria ao 0
+ Conteúdo e
+Nome do arquivo
+
+Commit: Ele aponta para tudo, nome do autor, parente, mensagem, blobs, arvores etc...
+
+Ex: echo ‘Gustavo’ | git hash-object –stdin
+Aqui ele irá me gerar um sha1 deste conteúdo
+Se fizermos de outra forma
+
+Echo –e ‘Gustavo’ |openssl sha1
+Ele irá gerar outro, para gerar o mesmo usamos o blob
+Echo –e ‘blob 9\0Gustavo’ | openssl sha1 
+Apontando chave ssh
+Ssh-keygen –t ed25519 –c seu email
+Navegamos até a pasta
+Ex: cd/users/Gustavo/.ssh
+Se dermos ls –a, ele irá mostrar s chave publica
+Ele irá gerar 1 pares de chaves, um público e um privado, pegamos ao publica, vamos no GitHub, seu perfil, settings, chave ssh e GPG, e colamos a chave lá, ai para a chave funcionar
+Usamos: evat $ (ssh-agent –s)
+Aí passamos a chave privada 
+Ssh-add id_ed25519
+Se não estiver na pasta devemos navegar até ela 
+
+Git init: inicia o repositório do git na respectiva pasta que estamos 
+Git add: inica um versionamento
+Git add *
+
+Git commit: cria um commit
+Git commit –m “string”
+
+Se estivermos usando o git pela primeira vez, devemos inserir email e nome
+Git config –global user.email ‘seu email’
+Git config –global usar.name seu nome 
+Se quisermos resertar, deletar o email e o nome e colocar outro 
+Git config –global –unset user.email
+Git config –global –unset user. Email
+Outras tags 
+Git status: ele julga o status dos arquivos, se está modificad, unmodificad, staged
+mv: serve para mover 
+mv receita.md. /receitas
+Move o arquivo md para a pasta receitas
+
+Criando um readme
+Echo > README.md
+
+SUBINDO O ARQUIVO PARA O GITHUB
+Antes precisamos criar o repositório e depois usar a url para subir 
+Após pegar a url usamos a seguinte tag
+Git remot and origin url
+git remot and origin master
+Push x Pull
+Push: vc envia os arquivos do seu repositório local para o remoto
+Git push origin master
+Pull: vc traz os arquivos do repositório remoto para o local
+Git pull origin master
+Para trazer usamos a tag  
+ git clone url
+  Ele fara um clone do código do seu repositório remoto para sua maquina
+
+Para vermos os repositórios remotos
+Git remote –v
+
